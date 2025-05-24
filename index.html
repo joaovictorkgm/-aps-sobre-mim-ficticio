@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta cherset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SobreMim - SPA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bg-dark text-white p-3">
+    <h1 class="text-center">A vida de Carlos Eduardo</h1>
+</header>
+
+<nav class="navegacao bg-light p-2" role="navigation">
+  <div class="d-flex justify-content-center gap-3">
+    <button class="btn btn-outline-primary" onclick="mostrarSecao('sobre')">Sobre</button>
+    <button class="btn btn-outline-primary" onclick="mostrarSecao('hobbies')">Hobbies</button>
+    <button class="btn btn-outline-primary" onclick="mostrarSecao('contato')">Contato</button>
+  </div>
+</nav>
+
+<main class="container p-4">
+<section id="sobre" class="secao">
+  <h2 class="titulo">Sobre Mim</h2>
+  <p class="mensagem">Olá! Meu nome é Carlos Eduardo, sou estudante de gastronomia!</p>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <article>
+        <h3>Curioso</h3>
+        <p>Adoro descobrir como as coisas funcionam.</p>
+      </article>
+    </div>
+    <div class="col-md-4">
+      <article>
+        <h3>Apesar de errar muito, sempre supero meus desafios.</h3>
+        <p>Eu tento sempre fazer novas amizades, sou considerado uma pessoa muito extrovertido por isso.</p>
+      </article>
+    </div>
+    <div class="col-md-4">
+      <article>
+        <h3>Gosto de resolver quebra-cabeças difíceis.</h3>
+        <p>Sou criativo, então estou sempre inventando pratos novos.</p>
+      </article>
+    </div>
+  </div>
+
+  <figure>
+    <img src="https://cdn.discordapp.com/attachments/1374421122506031138/1374848041676443668/man-4568761_640.png?ex=68322d84&is=6830dc04&hm=4ea6362fe31e39cb782aa2a0f327df158ceb56538e114bc920832fb4a138c922&""" alt="Minha foto" class="img-fluid">" 
+    <figcaption>Minha foto preferida</figcaption>
+  </figure>
+</section>
+
+
+<section id="hobbies" class="secao" style="display: none;">
+  <h2 class="titulo">Meus Hobbies</h2>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <article>
+        <p>Além de cozinhar, gosto muito de jogar futebol, caminhar e montar quebra-cabeças.</p>
+      </article>
+    </div>
+    <div class="col-md-6">
+      <figure>
+        <img src="https://cdn.discordapp.com/attachments/1374421122506031138/1374851324495265802/OIP.png?ex=6832d953&is=683187d3&hm=a279887cc748fed9e09f825260282e7d675c7a1c58f56aca4bd872e8ddb74ac1&" alt="Imagem de um hobby" class="img-fluid">
+        <figcaption>Uma das minhas caminhadas e trilhas</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <section id="contato" class="secao" style="display: none;">
+        <h2 class="titulo">Contato</h2>
+        <form>
+            <div class="mb-3"></div>
+            <input type="text" class="form-control" id="nome" aria-label="Campo para nome" placeholder="Seu nome">
+            </div>
+            <div class="mb-3"></div>
+            <input type="text" class="form-control" id="email" aria-label="Campo para email" placeholder="Seu email">
+            </div>
+            <button type="submit" class="btn btn-primary botao">Enviar</button>
+          <h3 class="mt-4">Informações da APS</h3>
+
+  <table class="table table-bordered table-dark">
+    <tbody>
+      <tr>
+        <th>Unidade:</th>
+        <td>Unicarioca Méier</td>
+      </tr>
+      <tr>
+        <th>Turma:</th>
+        <td>952</td>
+      </tr>
+      <tr>
+        <th>Nome:</th>
+        <td>João Victor Krauthein Gomes Montes</td>
+      </tr>
+      <tr>
+        <th>Matrícula:</th>
+        <td>2024101442</td>
+      </tr>
+      <tr>
+        <th>Nome:</th>
+        <td>Yan Cunha Maluf</td>
+      </tr>
+      <tr>
+        <th>Matrícula:</th>
+        <td>2024100926</td>
+      </tr>
+    </tbody>
+  </table>
+</section>    
+        </form>
+    </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-2">
+    <p>&copy; 2025 Sobre Mim - SPA</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
